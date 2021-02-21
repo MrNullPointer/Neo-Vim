@@ -21,7 +21,7 @@ set termguicolors
 set scrolloff=8
 set noshowmode
 set completeopt=menuone,noinsert,noselect
-"set colorcolumn=80
+set colorcolumn=80
 set signcolumn=yes
 set clipboard=unnamedplus
 
@@ -33,6 +33,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'townk/vim-autoclose'
 Plug 'gruvbox-community/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -70,8 +71,10 @@ Plug 'arcticicestudio/nord-vim'
 
 Plug 'rhysd/vim-clang-format'
 call plug#end()
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme nord
+colorscheme palenight
+
 highlight Normal guibg=none
 
 fun! TrimWhitespace()
@@ -108,3 +111,10 @@ let g:clang_format#style_options = {
             \ "BreakBeforeBraces" : "Stroustrup"}
 let g:clang_format#auto_format_on_insert_leave=1
 let g:AutoClosePreserveDotReg = 0
+
+
+"Adding C++ complie and Excute
+nnoremap <Leader>c :!g++ -g -Wall -Werror -o %:r.out % -std=c++2a<Enter>
+nnoremap <Leader>g :!g++ -g -o %:r.out % -std=c++2a<Enter>
+nnoremap <Leader>x : :!./%:r.out<Enter>
+nnoremap <Leader>p :!python3 % <Enter>
