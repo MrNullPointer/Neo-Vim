@@ -89,6 +89,7 @@ colorscheme ayu
 
 highlight Normal guibg=None
 highlight Comment guifg=#c6fced
+highlight LineNr guifg=#050505
 
 fun! TrimWhitespace()
     let l:save = winsaveview()

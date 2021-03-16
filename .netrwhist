@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor/include'
+let g:netrw_dirhist_8='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor'
+let g:netrw_dirhist_7='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor/src'
+let g:netrw_dirhist_6='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor'
+let g:netrw_dirhist_5='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor/src'
+let g:netrw_dirhist_4='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor'
 let g:netrw_dirhist_3='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor/include'
 let g:netrw_dirhist_2='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor'
 let g:netrw_dirhist_1='/home/mrheapallocator/Documents/Documents/ubuntu/Projects/LinuxActivityMonitor/src'
